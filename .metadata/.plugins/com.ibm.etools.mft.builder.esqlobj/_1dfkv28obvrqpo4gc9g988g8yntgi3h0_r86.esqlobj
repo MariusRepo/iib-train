@@ -1,0 +1,9 @@
+/*EATE FUNCTION Main() RETURNS BOOLE*/
+	BEGIN
+		--SET OutputRoot.Properties.MessageSet = '{DFDL_CSV}';
+		--SET OutputRoot.Properties.MessageType = '{}:EmployeeDetails';
+		SET OutputRoot.DFDL = InputRoot.XMLNSC;		
+		RETURN TRUE;
+	END;
+
+

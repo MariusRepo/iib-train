@@ -1,0 +1,13 @@
+/*EATE FUNCTION Main() RETURNS BOOLE*/
+	BEGIN
+		CALL ValidateAssignments();
+		RETURN TRUE;
+	END;
+	
+	CREATE PROCEDURE PassUpstreamValidationErros()
+	BEGIN
+		-- pass on the upstream validation errors
+		SET OutputRoot.XMLNSC.result.validationErrors = InputRoot.XMLNSC.result.validationErrors;		
+	END;
+
+	CREATE PROCEDURE ValidateAssignments()

@@ -1,0 +1,4 @@
+CURRENT_THEME_ID=org.eclipse.ui.ide.systemDefault
+com.ibm.bpm.gettingstarted.preferenceStore.com.ibm.etools.msgbroker.tooling.ide=10.0.0.20
+eclipse.preferences.version=1
+showIntro=false

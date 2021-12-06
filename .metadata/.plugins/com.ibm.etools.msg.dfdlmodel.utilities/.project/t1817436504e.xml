@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><MessageBroker name="DFDL_CSV">
+  <XSDCollection href="platform:/resource/DFDL_CSV/Employee.xsd" prefix="" targetNamespace="">
+    <import name="IBMdefined/CommaSeparatedFormat.xsd" targetNamespace="http://www.ibm.com/dfdl/CommaSeparatedFormat"/>
+    <element href="platform:/resource/DFDL_CSV/Employee.xsd#//EmployeeDetails;XSDElementDeclaration" name="EmployeeDetails"/>
+  </XSDCollection>
+  <XSDCollection href="platform:/resource/DFDL_CSV/IBMdefined/CommaSeparatedFormat.xsd" prefix="tns" targetNamespace="http://www.ibm.com/dfdl/CommaSeparatedFormat"/>
+</MessageBroker>

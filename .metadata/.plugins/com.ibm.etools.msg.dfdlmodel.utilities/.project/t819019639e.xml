@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><MessageBroker name="XML_Messages">
+  <XSDCollection href="platform:/resource/XML_Messages/user_assign.xsd" prefix="" targetNamespace="">
+    <element href="platform:/resource/XML_Messages/user_assign.xsd#//subscriptions;XSDElementDeclaration" name="subscriptions" type="mlib://XML_Messages#/-/complexType{}subscriptionsType"/>
+    <element href="platform:/resource/XML_Messages/user_assign.xsd#//firstname;XSDElementDeclaration=1" name="firstname" type="mlib://XML_Messages#/-/simpleType{http://www.w3.org/2001/XMLSchema}string"/>
+    <element href="platform:/resource/XML_Messages/user_assign.xsd#//assignments;XSDElementDeclaration=2" name="assignments" type="mlib://XML_Messages#/-/complexType{}assignmentsType"/>
+    <element href="platform:/resource/XML_Messages/user_assign.xsd#//subbatch;XSDElementDeclaration=3" name="subbatch" type="mlib://XML_Messages#/-/complexType{}subbatchType"/>
+    <element href="platform:/resource/XML_Messages/user_assign.xsd#//assignment;XSDElementDeclaration=4" name="assignment" type="mlib://XML_Messages#/-/simpleType{http://www.w3.org/2001/XMLSchema}string"/>
+    <element href="platform:/resource/XML_Messages/user_assign.xsd#//subscription;XSDElementDeclaration=5" name="subscription" type="mlib://XML_Messages#/-/complexType{}subscriptionType"/>
+    <element href="platform:/resource/XML_Messages/user_assign.xsd#//user;XSDElementDeclaration=6" name="user" type="mlib://XML_Messages#/-/complexType{}userType"/>
+    <element href="platform:/resource/XML_Messages/user_assign.xsd#//lastname;XSDElementDeclaration=7" name="lastname" type="mlib://XML_Messages#/-/simpleType{http://www.w3.org/2001/XMLSchema}string"/>
+    <element href="platform:/resource/XML_Messages/user_assign.xsd#//username;XSDElementDeclaration=8" name="username" type="mlib://XML_Messages#/-/simpleType{http://www.w3.org/2001/XMLSchema}string"/>
+    <complexType baseType="mlib://XML_Messages#/-/complexType{http://www.w3.org/2001/XMLSchema}anyType" href="platform:/resource/XML_Messages/user_assign.xsd#//subscriptionsType;XSDComplexTypeDefinition" name="subscriptionsType"/>
+    <complexType baseType="mlib://XML_Messages#/-/complexType{http://www.w3.org/2001/XMLSchema}anyType" href="platform:/resource/XML_Messages/user_assign.xsd#//assignmentsType;XSDComplexTypeDefinition=1" name="assignmentsType"/>
+    <complexType baseType="mlib://XML_Messages#/-/complexType{http://www.w3.org/2001/XMLSchema}anyType" href="platform:/resource/XML_Messages/user_assign.xsd#//subbatchType;XSDComplexTypeDefinition=2" name="subbatchType"/>
+    <complexType baseType="mlib://XML_Messages#/-/complexType{http://www.w3.org/2001/XMLSchema}anyType" href="platform:/resource/XML_Messages/user_assign.xsd#//subscriptionType;XSDComplexTypeDefinition=3" name="subscriptionType"/>
+    <complexType baseType="mlib://XML_Messages#/-/complexType{http://www.w3.org/2001/XMLSchema}anyType" href="platform:/resource/XML_Messages/user_assign.xsd#//userType;XSDComplexTypeDefinition=4" name="userType"/>
+  </XSDCollection>
+</MessageBroker>

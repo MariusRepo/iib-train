@@ -1,0 +1,27 @@
+/*EATE FUNCTION Main() RETURNS BOOLE*/
+	BEGIN
+		CALL CopyMessageHeaders();
+		DECLARE QSelect CHARACTER;
+		DECLARE Result ROW;
+		
+		DECLARE TEST CHARACTER 'mari.mari';
+		
+		SET QSelect[] = 'SELECT * FROM demo.users AS du WHERE du.username =?' VALUES(TEST);
+		--SET SELECT = 'SELECT D.DEPTNO,D.DNAME,D.LOC,E.EMPNO,E.ENAME,E.JOB,E.SAL FROM Database.EMP AS E,Database.DEPT AS D where E.JOB =?' VALUES(type1)
+		SET Result = PASSTHRU(QSelect);
+		RETURN TRUE;
+	END;
+
+	CREATE PROCEDURE CopyMessageHeaders() BEGIN
+		DECLARE I INTEGER 1;
+		DECLARE J INTEGER;
+		SET J = CARDINALITY(InputRoot.*[]);
+		WHILE I < J DO
+			SET OutputRoot.*[I] = InputRoot.*[I];
+			SET I = I + 1;
+		END WHILE;
+	END;
+
+	CREATE PROCEDURE CopyEntireMessage() BEGIN
+		SET OutputRoot = InputRoot;
+	END;

@@ -1,0 +1,10 @@
+CREATE DATABASE MODULE TST_Insert
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+				
+		INSERT INTO Database.demo.messages (user_id, user_message, user_channel) 
+			VALUES (InputRoot.XMLNSC.result.user_id, InputRoot.XMLNSC.result.message, InputRoot.XMLNSC.result.channel);
+		RETURN TRUE;
+	END;
+
+END MODULE;

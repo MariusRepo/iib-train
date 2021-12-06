@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="Employee">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="ID"/>
+        <xsd:element ref="Name"/>
+        <xsd:element ref="Country"/>
+        <xsd:element ref="PhoneNo"/>
+        <xsd:element ref="Email"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="Email" type="xsd:string"/>
+  <xsd:element name="PhoneNo" type="xsd:string"/>
+  <xsd:element name="Country" type="xsd:string"/>
+  <xsd:element name="EmployeeDetails">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element maxOccurs="unbounded" ref="Employee"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="ID" type="xsd:int"/>
+  <xsd:element name="Name" type="xsd:string"/>
+</xsd:schema>

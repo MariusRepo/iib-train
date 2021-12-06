@@ -1,0 +1,7 @@
+/*EATE FUNCTION Main() RETURNS BOOLE*/
+	BEGIN
+				
+		INSERT INTO Database.demo.messages (user_id, user_message, user_channel) VALUES (2, ' ', 'assign_1' );
+		RETURN TRUE;
+	END;
+

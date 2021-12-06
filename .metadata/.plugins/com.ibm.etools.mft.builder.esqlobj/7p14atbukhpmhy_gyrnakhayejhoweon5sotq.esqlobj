@@ -1,0 +1,11 @@
+/*EATE FUNCTION Main() RETURNS BOOLE*/
+	BEGIN
+		
+		DECLARE userId INTEGER InputRoot.XMLNSC.result.user_id;
+		DECLARE channel INTEGER InputRoot.XMLNSC.result.channel;
+		DECLARE message INTEGER InputRoot.XMLNSC.result.message;
+		
+		INSERT INTO Database.demo.messages (user_id, user_message, user_channel) VALUES (userId, message, channel);
+		RETURN TRUE;
+	END;
+

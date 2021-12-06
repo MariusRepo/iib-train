@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="com.ibm.etools.mft.navigator.BrokerWorkingSet.AppLib" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1638367647951_4" label="[WORK]" name="[WORK]">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/WORK" type="4"/>
+</workingSet>
+<workingSet editPageId="com.ibm.etools.mft.navigator.BrokerWorkingSet.AppLib" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1638438513117_9" label="[MessageModels]" name="[MessageModels]">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/MessageModels" type="4"/>
+</workingSet>
+<workingSet editPageId="com.ibm.etools.mft.navigator.BrokerWorkingSet.AppLib" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1638438648844_10" label="[DFDLApp]" name="[DFDLApp]">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/DFDLApp" type="4"/>
+</workingSet>
+<workingSet editPageId="com.ibm.etools.mft.navigator.BrokerWorkingSet.AppLib" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1638438648846_11" label="[DFDL_CSV]" name="[DFDL_CSV]">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/DFDL_CSV" type="4"/>
+</workingSet>
+<workingSet editPageId="com.ibm.etools.mft.navigator.BrokerWorkingSet.AppLib" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1638530633628_6" label="[LargeMessages]" name="[LargeMessages]">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/LargeMessages" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/LargeMessagesJava" type="4"/>
+</workingSet>
+<workingSet editPageId="com.ibm.etools.mft.navigator.BrokerWorkingSet.AppLib" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1638725715560_7" label="[INSERT_App]" name="[INSERT_App]">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/INSERT_App" type="4"/>
+</workingSet>
+<workingSet editPageId="com.ibm.etools.mft.navigator.BrokerWorkingSet.AppLib" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1638793894530_8" label="[Transformation_ESQL]" name="[Transformation_ESQL]">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Transformation_ESQL" type="4"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1638279136075_0" label="Window Working Set" name="Aggregate for window 1638279136075"/>
+</workingSetManager>

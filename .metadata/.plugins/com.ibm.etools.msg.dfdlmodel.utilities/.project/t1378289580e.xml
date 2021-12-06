@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><MessageBroker name="WORK">
+  <XSDCollection href="platform:/resource/WORK/IBMdefined/CommaSeparatedFormat.xsd" prefix="tns" targetNamespace="http://www.ibm.com/dfdl/CommaSeparatedFormat"/>
+</MessageBroker>

@@ -1,0 +1,16 @@
+BROKER SCHEMA demo
+
+
+CREATE DATABASE MODULE TST_Insert
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		
+		DECLARE everything REFERENCE TO Root;
+				
+		INSERT INTO Database.demo.messages (user_id, user_message, user_channel) 
+			VALUES (Root.XMLNSC.result.user_id, Root.XMLNSC.result.message, Root.XMLNSC.result.channel);
+		RETURN TRUE;
+	END;
+	
+END MODULE;
+

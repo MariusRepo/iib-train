@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="com.ibm.dfdl.ui.DFDLEditor.outline.settings">
+		<item value="420" key="com.ibm.dfdl.internal.ui.visual.utils.outline.QuickOutlineInformationControlDIALOG_WIDTH"/>
+		<item value="true" key="com.ibm.dfdl.internal.ui.visual.utils.outline.QuickOutlineInformationControlDIALOG_USE_PERSISTED_SIZE"/>
+		<item value="false" key="com.ibm.dfdl.internal.ui.visual.utils.outline.QuickOutlineInformationControlDIALOG_USE_PERSISTED_LOCATION"/>
+		<item value="300" key="com.ibm.dfdl.internal.ui.visual.utils.outline.QuickOutlineInformationControlDIALOG_HEIGHT"/>
+	</section>
+</section>

@@ -1,0 +1,15 @@
+/*EATE FUNCTION Main() RETURNS BOOLE*/
+	BEGIN
+		
+		
+		
+		DECLARE userId REFERENCE TO InputRoot.XMLNSC.result.user_id;
+		DECLARE channel REFERENCE TO InputRoot.XMLNSC.result.channel;
+		DECLARE message REFERENCE TO InputRoot.XMLNSC.result.message;
+		
+		SET userId = InputRoot.XMLNSC.result.channel;
+		
+		INSERT INTO Database.demo.messages (user_id, user_message, user_channel) VALUES (InputRoot.XMLNSC.result.user_id, message, channel);
+		RETURN TRUE;
+	END;
+

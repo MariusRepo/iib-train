@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><MessageBroker name="WORK_DEMO">
+  <XSDCollection href="platform:/resource/WORK_DEMO/demo/user_assign.xsd" prefix="" targetNamespace="">
+    <element href="platform:/resource/WORK_DEMO/demo/user_assign.xsd#//subscriptions;XSDElementDeclaration" name="subscriptions"/>
+    <element href="platform:/resource/WORK_DEMO/demo/user_assign.xsd#//firstname;XSDElementDeclaration=1" name="firstname" type="mlib://WORK_DEMO#/-/simpleType{}firstnameType"/>
+    <element href="platform:/resource/WORK_DEMO/demo/user_assign.xsd#//assignments;XSDElementDeclaration=2" name="assignments"/>
+    <element href="platform:/resource/WORK_DEMO/demo/user_assign.xsd#//subbatch;XSDElementDeclaration=3" name="subbatch"/>
+    <element href="platform:/resource/WORK_DEMO/demo/user_assign.xsd#//assignment;XSDElementDeclaration=4" name="assignment" type="mlib://WORK_DEMO#/-/simpleType{}assignmentType"/>
+    <element href="platform:/resource/WORK_DEMO/demo/user_assign.xsd#//subscription;XSDElementDeclaration=5" name="subscription"/>
+    <element href="platform:/resource/WORK_DEMO/demo/user_assign.xsd#//user;XSDElementDeclaration=6" name="user"/>
+    <element href="platform:/resource/WORK_DEMO/demo/user_assign.xsd#//lastname;XSDElementDeclaration=7" name="lastname" type="mlib://WORK_DEMO#/-/simpleType{}lastnameType"/>
+    <element href="platform:/resource/WORK_DEMO/demo/user_assign.xsd#//username;XSDElementDeclaration=8" name="username" type="mlib://WORK_DEMO#/-/simpleType{}usernameType"/>
+    <simpleType href="platform:/resource/WORK_DEMO/demo/user_assign.xsd#//firstnameType;XSDSimpleTypeDefinition" name="firstnameType" variety="atomic"/>
+    <simpleType href="platform:/resource/WORK_DEMO/demo/user_assign.xsd#//assignmentType;XSDSimpleTypeDefinition=1" name="assignmentType" variety="atomic"/>
+    <simpleType href="platform:/resource/WORK_DEMO/demo/user_assign.xsd#//lastnameType;XSDSimpleTypeDefinition=2" name="lastnameType" variety="atomic"/>
+    <simpleType href="platform:/resource/WORK_DEMO/demo/user_assign.xsd#//usernameType;XSDSimpleTypeDefinition=3" name="usernameType" variety="atomic"/>
+  </XSDCollection>
+</MessageBroker>

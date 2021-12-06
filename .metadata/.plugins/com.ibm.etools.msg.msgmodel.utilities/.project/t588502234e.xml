@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><MRMessageSet id="HKD40F0002001" name="Demo_Message" parser="XMLNSC">
+  <MRMsgCollection href="platform:/resource/Demo_Message/Demo_Message/inbound_definition_file.mxsd" prefix="" targetNamespace=""/>
+</MRMessageSet>

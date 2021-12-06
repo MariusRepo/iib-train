@@ -1,0 +1,69 @@
+BROKER SCHEMA demo
+
+
+CREATE COMPUTE MODULE TST_Assignments
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		CALL ValidateAssignments();
+		RETURN FALSE;
+	END;
+	
+	CREATE PROCEDURE ValidateAssignments()
+	BEGIN
+		-- variables declarations
+		DECLARE assignmnentsQuery, insertQuery CHARACTER;
+		DECLARE userId, assignChannel CHARACTER;
+		DECLARE i INTEGER 1;
+		DECLARE j INTEGER 1;
+		DECLARE assignsNo INTEGER;
+		DECLARE userAssignResult ROW;		
+				
+		-- input parsing
+		DECLARE users REFERENCE TO InputRoot.XMLNSC.result;
+		DECLARE usersNo INTEGER CARDINALITY(users.*[]);
+		
+		-- iterate each user
+		WHILE i <= usersNo DO
+			-- gather query parameters from input
+			DECLARE user REFERENCE TO users.users[i];
+			SET userId = user.userid;
+			SET assignsNo = CARDINALITY(user.assignments[]);
+			
+			-- iterate each assignment for the user
+			WHILE j <= assignsNo DO				
+				DECLARE assignments ROW user.assignments[j];
+				
+				-- create query for table user_channel_permissions
+				SET assignChannel = assignments.channel;
+				SET assignmnentsQuery = 'SELECT * FROM demo.user_channel_permissions AS ucp WHERE user_channel_name = "' || assignChannel || '" AND user_id = "' || userId || '"';
+				
+				-- execute query
+				SET userAssignResult = PASSTHRU(assignmnentsQuery);
+				SET assignsNo = CARDINALITY(userAssignResult.*[]);
+				
+				IF assignsNo > 0 THEN
+				BEGIN					
+					-- add to <successful_operations>
+					SET OutputRoot.XMLNSC.result.user_id = userId;
+					SET OutputRoot.XMLNSC.result.channel = assignChannel;
+					SET OutputRoot.XMLNSC.result.message = assignments.message;
+					PROPAGATE TO TERMINAL 0;
+				END;
+			ELSE
+				BEGIN
+					-- add to <invalid_operations>
+					SET OutputRoot.XMLNSC.result.invalid_operations[<].invalid.user_id = userId;
+					SET OutputRoot.XMLNSC.result.invalid_operations[<].invalid.username = user.username;
+					SET OutputRoot.XMLNSC.result.invalid_operations[<].invalid.channel = assignChannel;
+					SET OutputRoot.XMLNSC.result.invalid_operations[<].invalid.message = assignments.assignment[j].message;
+					PROPAGATE TO TERMINAL 1;
+				END;
+			END IF;
+			SET j = j+1;
+			END WHILE;
+
+		SET i = i+1;
+		END WHILE;
+	END;
+	
+	END MODULE;

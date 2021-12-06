@@ -1,0 +1,10 @@
+/*EATE FUNCTION Main() RETURNS BOOLE*/
+	BEGIN
+		DECLARE UserId CHARACTER;
+		DECLARE UserDetails ROW;
+		
+		SET UserId = 'SELECT * FROM demo.users limit 1';
+		SET UserDetails = PASSTHRU(UserId);
+		RETURN TRUE;
+	END;
+

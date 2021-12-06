@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><MessageBroker name="DFDLApp">
+  <XSDCollection href="platform:/resource/DFDLApp/employees.xsd" prefix="" targetNamespace="">
+    <element href="platform:/resource/DFDLApp/employees.xsd#//Employee;XSDElementDeclaration" name="Employee"/>
+    <element href="platform:/resource/DFDLApp/employees.xsd#//Email;XSDElementDeclaration=1" name="Email" type="mlib://DFDLApp#/-/simpleType{http://www.w3.org/2001/XMLSchema}string"/>
+    <element href="platform:/resource/DFDLApp/employees.xsd#//PhoneNo;XSDElementDeclaration=2" name="PhoneNo" type="mlib://DFDLApp#/-/simpleType{http://www.w3.org/2001/XMLSchema}string"/>
+    <element href="platform:/resource/DFDLApp/employees.xsd#//Country;XSDElementDeclaration=3" name="Country" type="mlib://DFDLApp#/-/simpleType{http://www.w3.org/2001/XMLSchema}string"/>
+    <element href="platform:/resource/DFDLApp/employees.xsd#//EmployeeDetails;XSDElementDeclaration=4" name="EmployeeDetails"/>
+    <element href="platform:/resource/DFDLApp/employees.xsd#//ID;XSDElementDeclaration=5" name="ID" type="mlib://DFDLApp#/-/simpleType{http://www.w3.org/2001/XMLSchema}int"/>
+    <element href="platform:/resource/DFDLApp/employees.xsd#//Name;XSDElementDeclaration=6" name="Name" type="mlib://DFDLApp#/-/simpleType{http://www.w3.org/2001/XMLSchema}string"/>
+  </XSDCollection>
+</MessageBroker>

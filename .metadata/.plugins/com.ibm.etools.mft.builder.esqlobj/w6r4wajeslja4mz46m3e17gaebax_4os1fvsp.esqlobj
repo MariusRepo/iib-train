@@ -1,0 +1,14 @@
+CREATE COMPUTE MODULE TST_Assignments
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		CALL ValidateAssignments();
+		RETURN TRUE;
+	END;
+	
+	CREATE PROCEDURE PassUpstreamValidationErros()
+	BEGIN
+		-- pass on the upstream validation errors
+		SET OutputRoot.XMLNSC.result.validationErrors = InputRoot.XMLNSC.result.validationErrors;		
+	END;
+
+	CREATE PROCEDURE ValidateAssignments()
