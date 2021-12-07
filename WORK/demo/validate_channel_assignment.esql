@@ -1,7 +1,7 @@
 BROKER SCHEMA demo
 
 
-CREATE COMPUTE MODULE TST_Assignments
+CREATE COMPUTE MODULE validate_channel_assignment
 	CREATE FUNCTION Main() RETURNS BOOLEAN
 	BEGIN
 		CALL ValidateAssignments();
@@ -44,9 +44,9 @@ CREATE COMPUTE MODULE TST_Assignments
 				IF assignsNo > 0 THEN
 				BEGIN					
 					-- add to <successful_operations>
-					SET OutputRoot.XMLNSC.result.user_id = userId;
-					SET OutputRoot.XMLNSC.result.channel = assignChannel;
-					SET OutputRoot.XMLNSC.result.message = assignments.message;
+					SET OutputRoot.XMLNSC.result._user_id = userId;
+					SET OutputRoot.XMLNSC.result._channel = assignChannel;
+					SET OutputRoot.XMLNSC.result._message = assignments.message;
 					PROPAGATE TO TERMINAL 0;
 				END;
 			ELSE

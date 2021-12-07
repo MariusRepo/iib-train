@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>INSERT_App</name>
+	<name>Read_MQ_Insert_DB</name>
 	<comment></comment>
 	<projects>
+		<project>MessageModels</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

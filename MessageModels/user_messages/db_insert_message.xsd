@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="result" type="resultType"/>
+  <xsd:element name="_message" type="xsd:string"/>
+  <xsd:element name="_user_id" type="xsd:string"/>
+  <xsd:element name="_channel" type="xsd:string"/>
+  <xsd:complexType name="resultType">
+    <xsd:sequence>
+      <xsd:element ref="_user_id"/>
+      <xsd:element ref="_channel"/>
+      <xsd:element ref="_message"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>
