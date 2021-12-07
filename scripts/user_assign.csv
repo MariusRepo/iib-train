@@ -1,0 +1,5 @@
+﻿user__firstname,user__lastname,user__username,assignment__channel,assignment__message
+Marius,RED,mari.mari,assign_1,SUCCESS
+Marius,RED,mari.mari,assign_10,FAILURE
+bogus,bogus,bogus,assign_1,SUCCESS
+bogus,bogus,bogus,assign_10,FAILURE

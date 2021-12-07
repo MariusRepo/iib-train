@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<subbatch>
+	<subscriptions>
+	
+		<subscription>
+			<user>
+				<firstname>Marius</firstname>
+				<lastname>RED</lastname>
+				<username>mari.mari</username>
+			</user>
+			<assignment>
+				<channel>assign_1</channel>
+				<message>SUCCESS</message>
+			</assignment>	
+			<assignment>
+				<channel>assign_10</channel>
+				<message>FAILURE</message>
+			</assignment>
+		</subscription>
+		
+		<subscription>
+			<user>
+				<firstname>bogus</firstname>
+				<lastname>bogus</lastname>
+				<username>bogus</username>
+			</user>
+			<assignment>
+				<channel>assign_1</channel>
+				<message>SUCCESS</message>
+			</assignment>	
+			<assignment>
+				<channel>assign_10</channel>
+				<message>FAILURE</message>
+			</assignment>	
+		</subscription>
+		
+	</subscriptions>	
+</subbatch>
